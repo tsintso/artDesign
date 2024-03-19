@@ -1,0 +1,77 @@
+.big-shoulders display {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100svh;
+  font-family: Big Shoulders Display, sans-serif;
+}
+
+
+.mainContainer {
+  display: flex;
+ 
+}
+
+.blackLeft {
+  max-width: 450px;
+  height: 800px;
+  background-color: black;
+  h1 {
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 88px;
+    text-align: left;
+    color: white;;
+    margin: 163px;
+    width: 454px;
+    mix-blend-mode: difference;
+  }
+}
+
+.mainInfo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  max-height: 300px;
+  max-width: 20%;
+  position: relative;
+  top: 150px;
+  right: 40px;
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: left;
+  }
+}
+
+.btnCont {
+  display: flex;
+  .arrow {
+    background-color: #D5966C;
+    width: 60px;
+  }
+  button {
+    width: 200px;
+    height: 70px;
+    color: white;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23.94px;
+    letter-spacing: 3.2px;
+    text-align: center;
+    background-color: black;
+  }  
+}
