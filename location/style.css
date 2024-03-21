@@ -1,0 +1,119 @@
+.big-shoulders display {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100svh;
+  font-family: Big Shoulders Display, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+.btnCont {
+  display: flex;
+  position: absolute;
+  left: 188px;
+  top: 0;
+  .arrow {
+    border: none;
+    width: 56px;
+    background-color: rgba(213, 150, 108, 1);
+    font-size: 30px;
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 72px;
+    width: 208px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 23.94px;
+    letter-spacing: 3.6363637447357178px;
+    text-align: left;
+  }
+}
+
+.secondCont {
+  width: 100vw;
+  height: 550px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  h2 {
+    font-family: Big Shoulders Display;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    text-align: left;
+  }
+}
+
+.secondContInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  h3 {
+    font-family: Big Shoulders Display;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 36px;
+    text-align: left;
+    color: rgba(213, 150, 108, 1);
+  }
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+  }
+  .bigText {
+    width: 540px;
+    height: 128px;
+  }
+}
+
+footer {
+  min-width: 770px;
+  height: 244px;
+  background-color: rgba(213, 150, 108, 1);
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  h2 {
+    font-size: 40px;
+    width: 180px;
+    position: relative;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    padding: 50px;
+  }
+  img {
+    position: relative;
+  }
+}

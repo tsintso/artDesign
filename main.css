@@ -15,26 +15,30 @@ body {
   width: 100vw;
   min-height: 100svh;
   font-family: Big Shoulders Display, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
-.mainContainer {
+.headContainer {
   display: flex;
- 
 }
 
 .blackLeft {
   max-width: 450px;
-  height: 800px;
+  max-height: 800px;
   background-color: black;
+  position: relative;
   h1 {
+    flex-wrap: wrap;
     font-size: 96px;
     font-weight: 900;
     line-height: 88px;
     text-align: left;
     color: white;;
     margin: 163px;
-    width: 454px;
+    /* width: 454px; */
     mix-blend-mode: difference;
   }
 }
@@ -43,8 +47,8 @@ body {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  max-height: 300px;
-  max-width: 20%;
+  height: 300px;
+  /* max-width: 20%; */
   position: relative;
   top: 150px;
   right: 40px;
@@ -73,5 +77,145 @@ body {
     letter-spacing: 3.2px;
     text-align: center;
     background-color: black;
+    cursor: pointer;
   }  
+}
+
+.photoesCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 1110px;
+  max-height: 1150px;
+  background-color: white;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 180px;
+  .firstPhoto{
+    width: 635px;
+    height: 720px;
+    margin-top: 60px;
+  }
+  .secondPhoto{
+    width: 635px;
+    height: 400px;
+    position: relative;
+    right: 190px;
+  }
+  .thirdPhoto{
+    width: 445px;
+    height: 313px;
+  }
+}
+
+.photoesText{
+  width: 350px;
+  height: 280px;
+  margin-top: 60px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  h2 {   
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(21, 21, 21, 1);  
+  }
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(68, 68, 68, 1);
+  }
+}
+
+.photoesFooterText{
+  width: 445px;
+  height: 377px;
+  background: rgba(21, 21, 21, 1);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 65px 47px 64px 48px;
+  h2 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+footer {
+  margin-top: 180px;
+  width: 100%;
+  min-width: 770px;
+  height: 244px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  h2 {
+    font-size: 40px;
+    width: 180px;
+    position: relative;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    padding: 50px;
+  }
+  img {
+    position: relative;
+  }
+}
+
+@media (max-width:770px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .headContainer {
+    .blackLeft {
+      display:none
+    }
+  }
+  .photoesCont {
+    margin-left: 20px;
+    height: 1131;
+    .firstPhoto{
+      width: 400px;
+      height: 720px;
+      margin-top: 60px;
+    }
+    .secondPhoto{
+      width: 350px;
+      height: 400px;
+      position: relative;
+      margin-left: 120px;
+    }
+    .thirdPhoto{
+      width: 280px;
+      height: 313px;
+    }
+  }
+  .photoesFooterText {
+    width: 280px;
+  }
 }
